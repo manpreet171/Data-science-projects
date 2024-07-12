@@ -69,3 +69,5 @@ The project requires the following Python packages:
 Install them using:
 ```bash
 pip install -r requirements.txt
+
+.

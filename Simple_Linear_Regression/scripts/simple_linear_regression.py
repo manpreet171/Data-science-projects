@@ -1,4 +1,3 @@
-# simple_linear_regression.py
 
 import pandas as pd
 import matplotlib.pyplot as plt

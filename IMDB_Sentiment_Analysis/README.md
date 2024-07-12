@@ -36,7 +36,7 @@ The main steps of this project include:
 
 1. **Clone the Repository**
     ```bash
-    git clone https://github.com/your-username/Data-science-projects.git
+    git clone https://github.com/manpreet171/Data-science-projects.git
     ```
 
 2. **Navigate to the Project Directory**

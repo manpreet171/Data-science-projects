@@ -1,109 +1,104 @@
-Review: Idk if someone interfare in that movie in Post Production but something was missing in this movie. A...
-Sentiment Polarity: 0.26, Sentiment Subjectivity: 0.33
+           Delivery Time  Sorting Time
+count      21.000000     21.000000
+mean       16.790952      6.190476
+std         5.074901      2.542028
+min         8.000000      2.000000
+25%        13.500000      4.000000
+50%        17.830000      6.000000
+75%        19.750000      8.000000
+max        29.000000     10.000000
 
-Review: First of all i don't want to be critic but people rating it 10 are emotionally inclined and now they...
-Sentiment Polarity: 0.3425, Sentiment Subjectivity: 0.6700000000000002
 
-Review: The book is undeniably has told a very good story, i've watch the movie that was made by hollywood b...
-Sentiment Polarity: 0.62, Sentiment Subjectivity: 0.7850000000000001
 
-Review: One of the finest acting I've ever seen.I suggest you to please watch this. I think this is far bett...
-Sentiment Polarity: 0.48, Sentiment Subjectivity: 0.65
+Data columns (total 2 columns):
 
-Review: This is the only Indian movie which made me cry..... You need to be emotionally strong specially aft...
-Sentiment Polarity: 0.3238095238095238, Sentiment Subjectivity: 0.575595238095238
+ #   Column         Non-Null Count  Dtype  
+---  ------         --------------  -----  
+ 0   Delivery Time  21 non-null     float64
+ 1   Sorting Time   21 non-null     int64  
 
-Review: Dear Manny/Augustas/Sushant Singh Rajput
-you did leave a mark, you left all your viewers speechless....
-Sentiment Polarity: 0.2613533834586466, Sentiment Subjectivity: 0.5345540132382238
 
-Review: There is no better way to give tribute to a genuinely amazing actor. The film was pretty emotional a...
-Sentiment Polarity: 0.19357142857142856, Sentiment Subjectivity: 0.5126190476190476
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:          Delivery_Time   R-squared:                       0.682
+Model:                            OLS   Adj. R-squared:                  0.666
+Method:                 Least Squares   F-statistic:                     40.80
+Date:                Fri, 12 Jul 2024   Prob (F-statistic):           3.98e-06
+Time:                        16:05:58   Log-Likelihood:                -51.357
+No. Observations:                  21   AIC:                             106.7
+Df Residuals:                      19   BIC:                             108.8
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+================================================================================
+                   coef    std err          t      P>|t|      [0.025      0.975]
+--------------------------------------------------------------------------------
+Intercept        6.5827      1.722      3.823      0.001       2.979      10.186
+Sorting_Time     1.6490      0.258      6.387      0.000       1.109       2.189
+==============================================================================
+Omnibus:                        3.649   Durbin-Watson:                   1.248
+Prob(Omnibus):                  0.161   Jarque-Bera (JB):                2.086
+Skew:                           0.750   Prob(JB):                        0.352
+Kurtosis:                       3.367   Cond. No.                         18.3
+==============================================================================
 
-Review: Dil Bechara - B (Good)It's not an easy experience to watch Dil Bechara. I had tears in my eyes, watc...
-Sentiment Polarity: 0.12019230769230771, Sentiment Subjectivity: 0.4756410256410256
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+RMSE: 2.7916503270617654
 
-Review: SSR has done some amazing work in some amazing movies. This is not one of them. Yeah he's charming a...
-Sentiment Polarity: 0.5104166666666666, Sentiment Subjectivity: 0.6625
 
-Review: Again a brilliant performance by Sushant Singh Rajput.We will miss him, will miss his art.
-Brilliant...
-Sentiment Polarity: 0.9333333333333332, Sentiment Subjectivity: 1.0
 
-Review: Fault in our stars is one of my all time favorites so I've decided I'm not gonna watch this movie bu...
-Sentiment Polarity: 0.21071428571428572, Sentiment Subjectivity: 0.4285714285714285
 
-Review: Unpopular : this movie doesn't deserve so much high rating just because it's actors last movie. It's...
-Sentiment Polarity: 0.005833333333333339, Sentiment Subjectivity: 0.5136111111111111
 
-Review: I'm not writing this from an emotional side of mine.. but I've rated 10/10 for this film only becaus...
-Sentiment Polarity: 0.09765625000000003, Sentiment Subjectivity: 0.7374999999999999
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:          Delivery_Time   R-squared:                       0.695
+Model:                            OLS   Adj. R-squared:                  0.679
+Method:                 Least Squares   F-statistic:                     43.39
+Date:                Fri, 12 Jul 2024   Prob (F-statistic):           2.64e-06
+Time:                        16:05:58   Log-Likelihood:                -50.912
+No. Observations:                  21   AIC:                             105.8
+Df Residuals:                      19   BIC:                             107.9
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+========================================================================================
+                           coef    std err          t      P>|t|      [0.025      0.975]
+----------------------------------------------------------------------------------------
+Intercept                1.1597      2.455      0.472      0.642      -3.978       6.297
+np.log(Sorting_Time)     9.0434      1.373      6.587      0.000       6.170      11.917
+==============================================================================
+Omnibus:                        5.552   Durbin-Watson:                   1.427
+Prob(Omnibus):                  0.062   Jarque-Bera (JB):                3.481
+Skew:                           0.946   Prob(JB):                        0.175
+Kurtosis:                       3.628   Cond. No.                         9.08
+==============================================================================
 
-Review: A must watch movie... This movie will tell you what lies between birth and death is life that we gen...
-Sentiment Polarity: 0.18454545454545457, Sentiment Subjectivity: 0.48
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+RMSE (Log Transformation): 2.733171476682066
+                              OLS Regression Results                             
+=================================================================================
+Dep. Variable:     np.log(Delivery_Time)   R-squared:                       0.711
+Model:                               OLS   Adj. R-squared:                  0.696
+Method:                    Least Squares   F-statistic:                     46.73
+Date:                   Fri, 12 Jul 2024   Prob (F-statistic):           1.59e-06
+Time:                           16:05:59   Log-Likelihood:                 7.7920
+No. Observations:                     21   AIC:                            -11.58
+Df Residuals:                         19   BIC:                            -9.495
+Df Model:                              1                                         
+Covariance Type:               nonrobust                                         
+================================================================================
+                   coef    std err          t      P>|t|      [0.025      0.975]
+--------------------------------------------------------------------------------
+Intercept        2.1214      0.103     20.601      0.000       1.906       2.337
+Sorting_Time     0.1056      0.015      6.836      0.000       0.073       0.138
+==============================================================================
+Omnibus:                        1.238   Durbin-Watson:                   1.325
+Prob(Omnibus):                  0.538   Jarque-Bera (JB):                0.544
+Skew:                           0.393   Prob(JB):                        0.762
+Kurtosis:                       3.067   Cond. No.                         18.3
+==============================================================================
 
-Review: After watching the movie. I could only say it touched the heart and emotions in the movie make us le...
-Sentiment Polarity: 0.3, Sentiment Subjectivity: 0.58
-
-Review: Its life
-The one who want to live they die
-And the one whom can live they choose to not........
-Sentiment Polarity: 0.13636363636363635, Sentiment Subjectivity: 0.5
-
-Review: Really just would bring tears into your eyes, this story depicts an amazing and a truly Lovely Story...
-Sentiment Polarity: 0.47500000000000003, Sentiment Subjectivity: 0.6166666666666667
-
-Review: Just watch and enjoy the journey with SSR
-ONE LAST TIME WITH THE WONDERFUL ACTOR SSR...
-Sentiment Polarity: 0.4666666666666666, Sentiment Subjectivity: 0.5222222222222223
-
-Review: I am a huge movie buff, and have seen countless movies in my life.
-I can honestly say, without a sha...
-Sentiment Polarity: -0.05243197278911561, Sentiment Subjectivity: 0.6402721088435374
-
-Review: This is the best adaptation of The Fault in Our Stars, the book. Both the Hollywood adaptation and t...
-Sentiment Polarity: 0.4375, Sentiment Subjectivity: 0.3375
-
-Review: Good movie and the music is good to and good acting...
-Sentiment Polarity: 0.5249999999999999, Sentiment Subjectivity: 0.45000000000000007
-
-Review: Okay, We all cared for SSR. But, Movies should be judged on technicalities and not on sympathies.Onl...
-Sentiment Polarity: 0.25999999999999995, Sentiment Subjectivity: 0.44000000000000006
-
-Review: Under ordinary circumstances , I would never have watched this film, given that it is an official re...
-Sentiment Polarity: 0.09888888888888889, Sentiment Subjectivity: 0.43222222222222223
-
-Review: Don't know what to write just after the watching the movie but watch this without even a second thou...
-Sentiment Polarity: 0.3125, Sentiment Subjectivity: 0.3
-
-Review: A must watch movie... This movie will tell you what lies between birth and death is life that we gen...
-Sentiment Polarity: 0.18454545454545457, Sentiment Subjectivity: 0.48
-
-Average Sentiment Polarity: 0.30751834563202046
-Average Sentiment Subjectivity: 0.546179003369229
-                                               Review  Polarity  Subjectivity
-0   Idk if someone interfare in that movie in Post...  0.260000      0.330000
-1   First of all i don't want to be critic but peo...  0.342500      0.670000
-2   The book is undeniably has told a very good st...  0.620000      0.785000
-3   One of the finest acting I've ever seen.I sugg...  0.480000      0.650000
-4   This is the only Indian movie which made me cr...  0.323810      0.575595
-5   Dear Manny/Augustas/Sushant Singh Rajput\nyou ...  0.261353      0.534554
-6   There is no better way to give tribute to a ge...  0.193571      0.512619
-7   Dil Bechara - B (Good)It's not an easy experie...  0.120192      0.475641
-8   SSR has done some amazing work in some amazing...  0.510417      0.662500
-9   Again a brilliant performance by Sushant Singh...  0.933333      1.000000
-10  Fault in our stars is one of my all time favor...  0.210714      0.428571
-11  Unpopular : this movie doesn't deserve so much...  0.005833      0.513611
-12  I'm not writing this from an emotional side of...  0.097656      0.737500
-13  A must watch movie... This movie will tell you...  0.184545      0.480000
-14  After watching the movie. I could only say it ...  0.300000      0.580000
-15  Its life\nThe one who want to live they die\nA...  0.136364      0.500000
-16  Really just would bring tears into your eyes, ...  0.475000      0.616667
-17  Just watch and enjoy the journey with SSR\nONE...  0.466667      0.522222
-18  I am a huge movie buff, and have seen countles... -0.052432      0.640272
-19  This is the best adaptation of The Fault in Ou...  0.437500      0.337500
-20  Good movie and the music is good to and good a...  0.525000      0.450000
-21  Okay, We all cared for SSR. But, Movies should...  0.260000      0.440000
-22  Under ordinary circumstances , I would never h...  0.098889      0.432222
-23  Don't know what to write just after the watchi...  0.312500      0.300000
-24  A must watch movie... This movie will tell you...  0.184545      0.480000
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+RMSE (Exponential Transformation): 2.940250323056201
+RMSE (Polynomial Transformation): 2.742148203780122

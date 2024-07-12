@@ -1,0 +1,7 @@
+newspaper3k
+pandas
+nltk
+textblob
+matplotlib
+seaborn
+wordcloud

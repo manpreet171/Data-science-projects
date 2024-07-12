@@ -5,14 +5,10 @@ This project performs sentiment analysis on user reviews from IMDB for the movie
 ## Project Structure
 
 IMDB_Sentiment_Analysis/
-├── data/
-│
+
 ├── scripts/
 │ ├── imdb_sentiment_analysis.py
-│
 ├── results/
-│
-├── .gitignore
 ├── README.md
 └── requirements.txt
 

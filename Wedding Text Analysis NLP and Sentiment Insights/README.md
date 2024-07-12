@@ -53,7 +53,7 @@ text-mining-nlp-project/
 
 1. **Clone the Repository**
     ```bash
-    git clone https://github.com/your-username/text-mining-nlp-project.git
+    git clone https://github.com/manpreet171/text-mining-nlp-project.git
     ```
 
 2. **Navigate to the Project Directory**
